@@ -1,0 +1,21 @@
+header {
+    background: #1E1E1E;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        display: block;
+        height: 60px;
+    }
+
+    div {
+        color: white;
+        font-family: Futura;
+        font-size: 24pt;
+        line-height: 1em;
+        text-align: center;
+        width: 180px;
+    }
+}
