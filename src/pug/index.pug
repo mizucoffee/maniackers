@@ -1,17 +1,9 @@
 html(lang="ja")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include _head.pug
         link(rel="stylesheet", href="/index.css")
         script(src="/index.js")
-        title Maniackers
-    body#index
-        header
-            div Members
-            div Products
-            img(src="logo.svg", alt="Maniackers").logo
-            div Nov Fes
-            div Contact
-        div.main
+    body
+        include _header.pug
+        div.main#index
             h1 The computer maniackers union.

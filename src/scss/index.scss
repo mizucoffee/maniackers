@@ -1,23 +1,22 @@
 @import "./_common.scss";
 @import "./_header.scss";
 
-#index {
+.main#index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
     background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg") ;
     background-size: cover;
     background-position: center;
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 100px);
-        h1 {
-            display: block;
-            font-family: Futura;
-            color: white;
-            font-size: calc(6vw);
-            font-weight: 100;
-        }
+    h1 {
+        display: block;
+        font-family: Futura;
+        color: white;
+        font-size: calc(6vw);
+        font-weight: 100;
     }
+    
 }
 
 @media screen and (min-width: 1366px) {
