@@ -6,16 +6,22 @@ header {
     align-items: center;
 
     .logo {
-        display: block;
         height: 60px;
     }
 
     div {
-        color: white;
-        font-family: Futura;
-        font-size: 24pt;
-        line-height: 1em;
         text-align: center;
         width: 180px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: Futura;
+            font-size: 24pt;
+            line-height: 1em;
+            transition: opacity .1s ease-in-out;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 }
