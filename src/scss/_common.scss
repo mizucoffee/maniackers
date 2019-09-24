@@ -5,6 +5,17 @@
 
 main {
     min-height: calc(100vh - 100px - 24px);
+    h1 {
+        padding: 64px;
+        color: white;
+        font-family: Futura;
+        font-size: 36pt;
+        line-height: 1em;
+        text-align: center;
+        background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg");
+        background-size: cover;
+        background-position: center 30%;
+    }
 }
 
 @font-face {
