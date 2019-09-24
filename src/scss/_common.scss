@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.main {
+    min-height: calc(100vh - 100px - 24px);
+}
+
 @font-face {
 	font-family: 'Futura';
 	src: url("/Futura-Lig.otf");
