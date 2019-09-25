@@ -3,13 +3,26 @@
 @import "./_footer.scss";
 
 main {
-    h1 {
-        padding: 64px;
-        color: white;
-        font-size: 36pt;
-        text-align: center;
-        background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg");
-        background-size: cover;
-        background-position: center 30%;
+    text-align: center;
+    .member {
+        margin-top: 64px;
+        margin-bottom: 16px;
+        img {
+            margin-bottom: 16px;
+            border-radius: 50%;
+            height: 128px;
+        }
+        .name {
+            font-size: 24pt;
+            font-weight: 500;
+        }
+        a {
+            color: black;
+            font-size: 16pt;
+            text-decoration: none;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 }
