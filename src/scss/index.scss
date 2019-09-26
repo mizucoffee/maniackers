@@ -9,10 +9,14 @@ main {
     background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg");
     background-size: cover;
     background-position: center;
-    span {
-        display: block;
+    div {
         color: white;
         font-size: 6vw;
+        span {
+            &:after {
+                content: " ";
+            }
+        }
     }
 }
 
@@ -20,6 +24,17 @@ main {
     main {
         h1 {
             font-size: 75pt;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        div {
+            font-size: 16vw;
+            span {
+                display: block;
+            }
         }
     }
 }
