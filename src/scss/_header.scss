@@ -16,7 +16,6 @@ header {
     }
 
     div.menu-btn {
-        display: block;
         position: absolute;
         top: 12px;
         right: 12px;
@@ -104,6 +103,10 @@ header {
             img {
                 height: 48px;
             }
+        }
+
+        div.menu-btn{
+            display: block;
         }
 
         &>div:not(.logo):not(.menu-btn) {
