@@ -1,3 +1,7 @@
+@import "./_variable.scss";
+@import "./_header/_index.scss";
+@import "./_footer.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +30,6 @@ main {
     font-weight: 300;
 }
 
-
 @font-face {
 	font-family: 'Futura';
     font-display: auto;
@@ -34,10 +37,7 @@ main {
     font-weight: 500;
 }
 
-
-
-// スマホ表示
-@media screen and (max-width: 768px) {
+@media #{$screen-sp} {
     main {
         min-height: calc(100vh - 64px - 24px);
     }

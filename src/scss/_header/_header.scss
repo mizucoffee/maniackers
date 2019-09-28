@@ -1,0 +1,26 @@
+.header {
+    background: #1E1E1E;
+    height: 100px;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__menu-btn {
+        display: none;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 10;
+    }
+}
+
+@media #{$screen-sp} {
+    .header {
+        height: 64px;
+
+        &__menu-btn {
+            display: block;
+        }
+    }
+}

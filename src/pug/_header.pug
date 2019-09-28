@@ -1,27 +1,23 @@
-header
-    div
-        a(href="/members.html") Members
-    div 
-        a(href="/products.html") Products
-    div.logo
-        a(href="/")
-            img(src="logo.svg", alt="Maniackers")
-    div
-        a(href="/novfes.html") Nov Fes
-    div
-        a(href="/contact.html") Contact
-    input#menu(type="checkbox", name="")
-    label(for="menu")
-        .menu-btn
-            span
-            span
-            span
+header.header
+    nav.nav
+        a.nav__btn(href="/members.html") Members
+        a.nav__btn(href="/products.html") Products
+        a.nav__btn--logo(href="/")
+            img.nav__logo(src="logo.svg", alt="Maniackers")
+        a.nav__btn(href="/novfes.html") Nov Fes
+        a.nav__btn(href="/contact.html") Contact
+
+    input#menu-checkbox.header__checkbox(type="checkbox", name="")
+    label.header__menu-btn.menu-btn(for="menu-checkbox")
+        span.menu-btn__line--top
+        span.menu-btn__line--center
+        span.menu-btn__line--bottom
+
     .menu
-        div
-            div.logo
-                a(href="/")
-                    img(src="logo.svg", alt="Maniackers")
-            a(href="/members.html") Members
-            a(href="/products.html") Products
-            a(href="/novfes.html") Nov Fes
-            a(href="/contact.html") Contact
+        .menu__list
+            a.menu__btn--logo(href="/")
+                img.menu__logo(src="logo.svg", alt="Maniackers")
+            a.menu__btn--b1(href="/members.html") Members
+            a.menu__btn--b2(href="/products.html") Products
+            a.menu__btn--b3(href="/novfes.html") Nov Fes
+            a.menu__btn--b4(href="/contact.html") Contact

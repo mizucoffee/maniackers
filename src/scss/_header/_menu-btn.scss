@@ -1,0 +1,46 @@
+%__line {
+    transition: all .4s;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    left: 0;
+    border-radius: 8px;
+}
+
+.menu-btn {
+    width: 36px;
+    height: 32px;
+
+    &__line{
+        &--top {
+            @extend %__line;
+            top: 0;
+        }
+        &--center {
+            @extend %__line;
+            top: 14px;
+        }
+        &--bottom {
+            @extend %__line;
+            bottom: 0;
+        }
+    }
+}
+
+#menu-checkbox:checked ~ label {
+    .menu-btn {
+        &__line{
+            &--top {
+                transform: translateY(14px) rotate(-135deg);
+            }
+            &--center {
+                transform: scale(0,1);
+            }
+            &--bottom {
+                transform: translateY(-14px) rotate(135deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    &__btn {
+        display: block;
+        width: 180px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 24pt;
+        line-height: 1em;
+        transition: opacity .1s ease-in-out;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__logo {
+        height: 60px;
+    }
+}
+
+@media #{$screen-sp} {
+    .nav {
+        height: 64px;
+
+        &__btn {
+            display: none;
+            &--logo {
+                display: block;
+                height: 48px;
+            }
+        }
+
+        &__logo {
+            height: 48px;
+        }
+    }
+}
+
+@media #{$screen-tab} {
+    .nav {
+        &__btn {
+            text-align: center;
+            width: 130px;
+            font-size: 20pt;
+            line-height: 1em;
+        }
+
+        &__logo {
+            margin: 0 24px;
+        }
+    }
+}
