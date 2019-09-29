@@ -1,4 +1,4 @@
-%__line {
+%menu-btn__line {
     transition: all .4s;
     position: absolute;
     display: inline-block;
@@ -15,15 +15,15 @@
 
     &__line{
         &--top {
-            @extend %__line;
+            @extend %menu-btn__line;
             top: 0;
         }
         &--center {
-            @extend %__line;
+            @extend %menu-btn__line;
             top: 14px;
         }
         &--bottom {
-            @extend %__line;
+            @extend %menu-btn__line;
             bottom: 0;
         }
     }
