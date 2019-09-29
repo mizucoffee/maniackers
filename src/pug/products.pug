@@ -3,8 +3,23 @@ html(lang="ja")
     head
         include _head
         link(rel="stylesheet", href="/products.css")
+        link(href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet")
     body
         include _header
         main.products-main
             h1.products-main__h1 Products
+            div.products-main__product.product
+                h2.product__h2 Kitty Cat
+                img.product__logo(src="./products/logo_color.svg", alt="")
+                p.product__description お気に入りのキーボードをいつでもどこでも。
+                p.product__description 11月祭で先行販売予定
+
+            div.products-main__product.product
+                h2.product__h2 KCG空き部屋検索β
+                img.product__image(src="./products/kcg-available-room.png", alt="")
+                p.product__description ふと空いたスキマ時間。
+                | サクッと空き部屋を検索して有意義に過ごしてみませんか？
+                p.product__description
+                    a(href="//kcg-available-room.netlify.com/") KCG空き部屋検索β
+
         include _footer

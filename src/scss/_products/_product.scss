@@ -1,0 +1,20 @@
+.product {
+    &__h2 {
+        font-family: 'Comfortaa';
+        font-size: 28pt;
+        background: linear-gradient(to left, #FFF, #EEE, #FFF);
+        width: 800px;
+        margin: 0 auto 16px;
+        line-height: 1em;
+        padding: calc(0.5em + 2px) 0 calc(0.5em - 2px) 0;
+    }
+    &__logo {
+        width: 230px;
+    }
+    &__image {
+        width: 540px;
+    }
+    &__description {
+        margin-top: 16px;
+    }
+}

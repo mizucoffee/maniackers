@@ -1,7 +1,12 @@
 .products-main {
     @extend %common-main;
+    text-align: center;
 
     &__h1 {
         @extend %common-h1;
+    }
+
+    &__product {
+        margin: 48px 0;
     }
 }
