@@ -1,7 +1,13 @@
 .novfes-main {
     @extend %common-main;
+    text-align: center;
 
     &__h1 {
         @extend %common-h1;
+    }
+    &__circlecut {
+        margin-top: 32px;
+        width: 100%;
+        max-width: 250px;
     }
 }
