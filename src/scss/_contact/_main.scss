@@ -1,0 +1,10 @@
+.contact-main {
+    @extend %common-main;
+
+    &__h1 {
+        @extend %common-h1;
+    }
+    &__form {
+        padding-top: 32px;
+    }
+}

@@ -1,0 +1,31 @@
+.index-main {
+    @extend %common-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &__box {
+        color: white;
+        font-size: 6vw;
+    }
+
+    &__word {
+        &:after {
+            content: " ";
+        }
+    }
+}
+
+@media #{$screen-sp} {
+    .index-main {
+        &__box {
+            font-size: 16vw;
+        }
+        &__word {
+            display: block;
+        }
+    }
+}

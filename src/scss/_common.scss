@@ -1,6 +1,7 @@
-@import "./_variable.scss";
-@import "./_header/_index.scss";
-@import "./_footer.scss";
+@import "./variable.scss";
+@import "./font.scss";
+@import "./_header/index.scss";
+@import "./_footer/index.scss";
 
 * {
     margin: 0;
@@ -9,36 +10,23 @@
     font-weight: 300;
 }
 
-main {
+%common-main {
     min-height: calc(100vh - 100px - 24px);
-    h1 {
-        padding: 64px;
-        color: white;
-        font-size: 36pt;
-        line-height: 1em;
-        text-align: center;
-        background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg");
-        background-size: cover;
-        background-position: center 30%;
-    }
 }
 
-@font-face {
-	font-family: 'Futura';
-    font-display: auto;
-    src: url("/Futura-Lig.otf");
-    font-weight: 300;
-}
-
-@font-face {
-	font-family: 'Futura';
-    font-display: auto;
-	src: url("/Futura-Med.otf");
-    font-weight: 500;
+%common-h1 {
+    padding: 64px;
+    color: white;
+    font-size: 36pt;
+    line-height: 1em;
+    text-align: center;
+    background: linear-gradient(0, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)) , url("/takayama-city-library.jpg");
+    background-size: cover;
+    background-position: center 30%;
 }
 
 @media #{$screen-sp} {
-    main {
+    %common-main {
         min-height: calc(100vh - 64px - 24px);
     }
 }

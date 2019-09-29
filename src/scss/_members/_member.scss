@@ -1,0 +1,21 @@
+.member {
+    &__icon {
+        display: block;
+        margin: 0 auto 16px;
+        border-radius: 50%;
+        height: 128px;
+    }
+    &__name {
+        display: block;
+        font-size: 24pt;
+        font-weight: 500;
+    }
+    &__link {
+        color: black;
+        font-size: 16pt;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

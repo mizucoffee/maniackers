@@ -3,49 +3,42 @@ html(lang="ja")
     head
         include _head
         link(rel="stylesheet", href="/members.css")
-        script(src="/members.js")
     body
         include _header
-        main
-            h1 Members
-            .member
-                img(src="/members/k-taro.png", alt="k-taro")
+        main.members-main
+            h1.members-main__h1 Members
+            .members-main__member.member
+                img.member__icon(src="/members/k-taro.png", alt="k-taro")
+                span.member__name K-Taro (Keitaro Masaoka)
+                span.skill Skill: Hardware Enginering
                 br
-                span.name K-Taro (Keitaro Masaoka)
-                br
-                span 機械設計屋
+                span 機械設計屋・Apple製品布教しすぎた人
                 br
                 span Apple製品布教しすぎた人
                 br
-                a(href="https://kemarintech.net/") kemarintech.net
-            .member
-                img(src="/members/mizucoffee.png", alt="mizucoffee")
-                br
-                span.name 水珈琲 (Ritsuki Goto)
-                br
-                span サーバー屋
+                a.member__link(href="https://kemarintech.net/") kemarintech.net
+            .members-main__member.member
+                img.member__icon(src="/members/mizucoffee.png", alt="mizucoffee")
+                span.member__name 水珈琲 (Ritsuki Goto)
+                span サーバー屋・このサイト作った人
                 br
                 span レジ私物で持ってる人
                 br
-                a(href="https://mizu.coffee/") mizu.coffee
-            .member
-                img(src="/members/sakurayoru.png", alt="sakurayoru")
+                a.member__link(href="https://mizu.coffee/") mizu.coffee
+            .members-main__member.member
+                img.member__icon(src="/members/sakurayoru.png", alt="sakurayoru")
+                span.member__name さくら夜 (Shun Hirose)
+                span ガジェット屋・ゆるふわ初心者(自称)
                 br
-                span.name さくら夜 (Shun Hirose)
+                span
                 br
-                span ガジェット屋
-                br
-                span ゆるふわ初心者(自称)
-                br
-                a(href="https://sakurayoru.dev/") sakurayoru.dev
-            .member
-                img(src="/members/arupaka.png", alt="arupaka")
-                br
-                span.name あるぱか (Atsushi Takegami)
-                br
+                a.member__link(href="https://sakurayoru.dev/") sakurayoru.dev
+            .members-main__member.member
+                img.member__icon(src="/members/arupaka.png", alt="arupaka")
+                span.member__name あるぱか (Atsushi Takegami)
                 span 音楽屋
                 br
                 span 地下室でピアノ弾く人
                 br
-                a(href="https://arupaka.dev/") arupaka.dev
+                a.member__link(href="https://arupaka.dev/") arupaka.dev
         include _footer
