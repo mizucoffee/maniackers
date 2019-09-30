@@ -1,0 +1,8 @@
+.card {
+    display: none;
+    position: fixed;
+
+    &:target {
+        display: block;
+    }
+}
