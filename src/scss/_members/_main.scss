@@ -5,4 +5,10 @@
     &__h1 {
         @extend %common-h1;
     }
+    &__members {
+        margin: 32px auto;
+    }
+    &__cards {
+        margin: 48px 0 32px;
+    }
 }

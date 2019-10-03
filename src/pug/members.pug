@@ -2,12 +2,90 @@ doctype html
 html(lang="ja")
     head
         link(rel="stylesheet", href="/members.css")
+        link(href="https://fonts.googleapis.com/css?family=Quicksand:600,700&display=swap" rel="stylesheet")
         include _head
     body
         include _header
         main.members-main
             h1.members-main__h1 Members
-            .members
+            .members-main__cards.cards
+                #k-taro.cards__card.card
+                    img.card__photo(src="/members/k-taro.png")
+                    .card__data-box
+                        .card__data-wrapper
+                            .card__data.card-data
+                                .card-data__nickname K-Taro
+                                .card-data__name Keitaro Masaoka
+                                .card-data__position Hardware Enginner
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Skills:
+                                    .card-data__skill-work-box
+                                        .card-data__skill-work Robotics / Python
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Works:
+                                    .card-data__skill-work-box
+                                        .card-data__skill-work Rosso
+                                        .card-data__skill-work Elecrow CM
+                                        .card-data__skill-work Sun Tracer
+                        a.card__github(href="//github.com/K-Taro79" target="_blank" rel="noopener noreferrer") @K-Taro79
+                        a.card__url(href="//kemarintech.net/" target="_blank" rel="noopener noreferrer") https://kemarintech.net/
+                #mizucoffee.cards__card.card
+                    img.card__photo(src="/members/mizucoffee.png")
+                    .card__data-box
+                        .card__data-wrapper
+                            .card__data
+                                .card-data__nickname Mizucoffee
+                                .card-data__name Ritsuki Goto
+                                .card-data__position Server-Side Enginner
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Skills:
+                                    .card-data__skill-work-box
+                                        .card-data__skill-work Node.js / Ruby
+                                        .card-data__skill-work Linux / Network
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Works:
+                                    .card-data__skill-work-box
+                                        a.card-data__skill-work--a(href="//github.com/mizucoffee/maniackers" target="_blank" rel="noopener noreferrer") Maniackers Homepage
+                                        a.card-data__skill-work--a(href="//twiback.mizucoffee.net/" target="_blank" rel="noopener noreferrer") Twiback
+                                        a.card-data__skill-work--a(href="//iori-mizucoffee.herokuapp.com/" target="_blank" rel="noopener noreferrer") Iori
+                        a.card__github(href="//github.com/mizucoffee" target="_blank" rel="noopener noreferrer") @mizucoffee
+                        a.card__url(href="//mizu.coffee/" target="_blank" rel="noopener noreferrer") https://mizu.coffee/
+                #sakurayoru.cards__card.card
+                    img.card__photo(src="/members/sakurayoru.png")
+                    .card__data-box
+                        .card__data-wrapper
+                            .card__data
+                                .card-data__nickname Sakurayoru
+                                .card-data__name Shun Hirose
+                                .card-data__position Yurufuwa Enginner
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Works:
+                                    .card-data__skill-work-box
+                                        .card-data__skill-work C# / Python / C / HTML5
+                                        .card-data__skill-work Xamarin
+                                        .card-data__skill-work ffmpeg
+                        a.card__github(href="//github.com/sakurayoru" target="_blank" rel="noopener noreferrer") @sakurayoru
+                        a.card__url(href="//sakurayoru.dev/" target="_blank" rel="noopener noreferrer") https://sakurayoru.dev/
+                #arupaka.cards__card.card
+                    img.card__photo(src="/members/arupaka.png")
+                    .card__data-box
+                        .card__data-wrapper
+                            .card__data
+                                .card-data__nickname Arupaka
+                                .card-data__name Atsushi Takegami
+                                .card-data__position ??? Enginner
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Skills:
+                                    .card-data__skill-work-box
+                                        .card-data__skill-work Play the piano
+                                        .card-data__skill-work Cooking
+                                .card-data__skills-works
+                                    .card-data__skill-work-header Works:
+                                    .card-data__skill-work-box
+                                        .card-data__skill-work Carbonara(?!)
+                        a.card__github(href="//github.com/ffffffffff5555555555" target="_blank" rel="noopener noreferrer") @ffffffffff5555555555
+                        a.card__url(href="//arupaka.dev/" target="_blank" rel="noopener noreferrer") https://arupaka.dev/
+            .members-main__members.members
                 a.members__member.member(href="#k-taro")
                     img.member__photo(src="/members/k-taro.png")
                     .member__name-box
@@ -24,31 +102,4 @@ html(lang="ja")
                     img.member__photo(src="/members/arupaka.png")
                     .member__name-box
                         span.member__name Arupaka
-            .cards
-                #k-taro.cards__card.card
-                    .nickname K-Taro
-                    .name Keitaro Masaoka
-                    .position Hardware Enginner
-                    .skills
-                        .skill Robotics
-                        .skill Python
-                    .works
-                        .work Rosso
-                        .work Elecrow CM
-                        .work Sun Tracer
-                    a.github(href="//github.com/K-Taro79") @K-Taro79
-                    a.url(href="//kemarintech.net/") https://kemarintech.net/
-                #mizucoffee.cards__card.card
-                    .nickname mizucoffee
-                    .name Ritsuki Goto
-                    .position Server-Side Enginner
-                    .skills
-                        .skill Node.js / Ruby / Linux
-                    .works
-                        a.work(href="//github.com/mizucoffee/maniackers") Maniackers Homepage
-                        a.work(href="//twiback.mizucoffee.net/") Twiback
-                        a.work(href="//iori-mizucoffee.herokuapp.com/") Iori
-                    a.github(href="//github.com/mizucoffee") @mizucoffee
-                    a.url(href="//mizu.coffee/") https://mizu.coffee/
-
         include _footer

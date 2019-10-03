@@ -1,0 +1,83 @@
+
+%card-data__text {
+    line-height: 1em;
+    font-family: Quicksand;
+    color: #686868;
+    font-size: 1.25vw;
+    margin-bottom: .4vw;
+    display: block;
+    width: fit-content;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.card-data {
+    &__nickname {
+        @extend %card-data__text;
+        color: #1f1f1f;
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+
+    &__name {
+        @extend %card-data__text;
+        font-size: 2vw;
+        font-weight: 700;
+        margin-bottom: 1.5vw;
+    }
+
+    &__position {
+        @extend %card-data__text;
+        margin-bottom: 1.5vw;
+    }
+
+    &__skill-work-header {
+        @extend %card-data__text;
+        margin-right: .4vw;
+        margin-bottom: 0;
+    }
+
+    &__skills-works {
+        margin-bottom: 1.5vw;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__skill-work {
+        @extend %card-data__text;
+        &--a {
+            @extend %card-data__text;
+            text-decoration: none;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1620px) {
+//     %card-data__text {
+//         font-size: 45px;
+//     }
+
+//     &__nickname {
+//         font-size: 56.6vw;
+//     }
+
+//     &__name {
+//     }
+
+//     &__position {
+//     }
+
+//     &__skill-work-header {
+//     }
+
+//     &__skills-works {
+//     }
+
+// }
