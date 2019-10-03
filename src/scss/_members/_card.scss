@@ -11,14 +11,10 @@
 
 .card {
     display: none;
-
     width: 40vw;
     height: calc(40vw * 0.618);
     background: #f8f8f8;
     margin: 0 auto;
-
-    max-width: 1294.4px;
-    max-height: 800px;
     border-radius: 1vw;
     filter: drop-shadow(3px 3px 3px #5f5f5f);
 
@@ -28,7 +24,6 @@
 
         width: calc(40vw * 0.618 - 1.5vw * 2);
         height: calc(100% - 1.5vw * 2);
-        max-width: calc(1294.4px * 0.618 - 1.5vw * 2);
         margin: 1.5vw;
         top: 1.5vw;
         left: 1.5vw;
@@ -49,7 +44,6 @@
     &__photo {
         object-fit: cover;
         width: calc(40vw * 0.382);
-        max-width: calc(1294.4px * 0.382);
         height: 100%;
         display: block;
         float: left;
@@ -67,5 +61,27 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+}
+
+@media #{$screen-sp} {
+    .card {
+        width: 80vw;
+        height: calc(80vw * 0.618);
+
+        &__data-box {
+            width: calc(80vw * 0.618 - 1.5vw * 2);
+        }
+
+        &__photo {
+            width: calc(80vw * 0.382);
+        }
+        &__github {
+            font-size: 2vw;
+        }
+    
+        &__url {
+            font-size: 2vw;
+        }
     }
 }

@@ -59,25 +59,31 @@
     }
 }
 
-// @media screen and (min-width: 1620px) {
-//     %card-data__text {
-//         font-size: 45px;
-//     }
+@media #{$screen-sp} {
+    %card-data__text {
+        font-size: 2.5vw;
+        margin-bottom: .8vw;
+    }
 
-//     &__nickname {
-//         font-size: 56.6vw;
-//     }
+    .card-data {
+        &__nickname {
+            font-size: 7vw;
+        }
 
-//     &__name {
-//     }
+        &__name {
+            font-size: 4vw;
+        }
 
-//     &__position {
-//     }
+        &__position {
+            margin-bottom: 3vw;
+        }
 
-//     &__skill-work-header {
-//     }
+        &__skill-work-header {
+            margin-right: .8vw;
+        }
 
-//     &__skills-works {
-//     }
-
-// }
+        &__skills-works {
+            margin-bottom: 3vw;
+        }
+    }
+}
