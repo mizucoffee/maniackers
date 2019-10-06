@@ -6,9 +6,29 @@ html(lang="ja")
     body
         include _header
         main.index-main
-            div.index-main__box
+            .index-main__box
                 span.index-main__word The
                 span.index-main__word computer
                 span.index-main__word maniackers
                 span.index-main__word union.
+            .index-main__news.news
+                input#news-cb(type="checkbox" hidden)
+                label.news__btn(for="news-cb")
+                    .news__text-news News
+                    .news__text-exit Exit
+                div.news__background
+                div.news__container
+                    div.news__box
+                        h2.news__h2 News
+                        hr.news__hr
+                        div.news__news-box
+                            div.news__block
+                                span.news__date 2019/09/29
+                                h3.news__title Productsを追加しました
+                            div.news__block
+                                span.news__date 2019/09/26
+                                h3.news__title Membersを追加しました
+                            div.news__block
+                                span.news__date 2019/09/23
+                                h3.news__title 公式サイトを公開しました
         include _footer
