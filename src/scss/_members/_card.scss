@@ -1,3 +1,15 @@
+%card {
+    width: 40vw;
+    height: calc(40vw * 0.618);
+    background: #f8f8f8;
+    margin: 0 auto;
+    border-radius: 1vw;
+    position: absolute;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.2));
+    z-index: 0;
+    transition: z-index 0.9s step-end;
+}
+
 %card__a {
     font-size: 1vw;
     line-height: 1em;
@@ -10,13 +22,7 @@
 }
 
 .card {
-    display: none;
-    width: 40vw;
-    height: calc(40vw * 0.618);
-    background: #f8f8f8;
-    margin: 0 auto;
-    border-radius: 1vw;
-    filter: drop-shadow(3px 3px 3px #5f5f5f);
+    @extend %card;
 
     &__data-box {
         position: relative;
@@ -25,7 +31,6 @@
         width: calc(40vw * 0.618 - 1.5vw * 2);
         height: calc(100% - 1.5vw * 2);
         margin: 1.5vw;
-        top: 1.5vw;
         left: 1.5vw;
     }
 
@@ -35,10 +40,6 @@
         justify-content: left;
         text-align: left;
         align-items: center;
-    }
-
-    &:target {
-        display: block;
     }
 
     &__photo {
@@ -62,13 +63,34 @@
         bottom: 0;
         right: 0;
     }
+
+    &--blank {
+        @extend %card;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20pt;
+    }
+}
+
+#blank-cb:checked ~ #blank {
+    z-index: 9;
+}
+
+#k-taro-cb:checked ~ #k-taro,
+#mizucoffee-cb:checked ~ #mizucoffee,
+#sakurayoru-cb:checked ~ #sakurayoru,
+#arupaka-cb:checked ~ #arupaka {
+    animation: card-change 1s ease;
+    z-index: 9;
 }
 
 @media #{$screen-sp} {
-    .card {
+    %card {
         width: 80vw;
         height: calc(80vw * 0.618);
-
+    }
+    .card {
         &__data-box {
             width: calc(80vw * 0.618 - 1.5vw * 2);
         }
@@ -76,12 +98,57 @@
         &__photo {
             width: calc(80vw * 0.382);
         }
+
         &__github {
             font-size: 2vw;
         }
-    
+
         &__url {
             font-size: 2vw;
         }
+    }
+    #k-taro-cb:checked ~ #k-taro,
+    #mizucoffee-cb:checked ~ #mizucoffee,
+    #sakurayoru-cb:checked ~ #sakurayoru,
+    #arupaka-cb:checked ~ #arupaka {
+        animation: card-change-sp 1s ease;
+    }
+}
+
+@keyframes card-change {
+    0% {
+        z-index: 0;
+    }
+    50% {
+        z-index: 0;
+        transform: rotateZ(25deg) translate(calc(-1*(40vw * 0.618) / 5), -40vw);
+    }
+    51% {
+        z-index: 10;
+    }
+    99% {
+        z-index: 10;
+    }
+    100% {
+        z-index: 9;
+    }
+}
+
+@keyframes card-change-sp {
+    0% {
+        z-index: 0;
+    }
+    50% {
+        z-index: 0;
+        transform: rotateZ(25deg) translate(calc(-1*(80vw * 0.618) / 5), -80vw);
+    }
+    51% {
+        z-index: 10;
+    }
+    99% {
+        z-index: 10;
+    }
+    100% {
+        z-index: 9;
     }
 }

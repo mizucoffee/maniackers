@@ -1,3 +1,13 @@
 .cards {
-    width: 100%;
+    width: 40vw;
+    height: calc(40vw * 0.618);
+    margin: 48px auto 32px;
+    position: relative;
+}
+
+@media #{$screen-sp} {
+    .cards {
+        width: 80vw;
+        height: calc(80vw * 0.618);
+    }
 }

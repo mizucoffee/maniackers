@@ -9,6 +9,13 @@ html(lang="ja")
         main.members-main
             h1.members-main__h1 Members
             .members-main__cards.cards
+                input(type="radio" name="card-cb" id="blank-cb" hidden checked)
+                input(type="radio" name="card-cb" id="k-taro-cb" hidden)
+                input(type="radio" name="card-cb" id="mizucoffee-cb" hidden)
+                input(type="radio" name="card-cb" id="sakurayoru-cb" hidden)
+                input(type="radio" name="card-cb" id="arupaka-cb" hidden)
+                #blank.cards__card.card--blank
+                    h2 Members Card
                 #k-taro.cards__card.card
                     img.card__photo(src="/members/k-taro.png")
                     .card__data-box
@@ -86,19 +93,19 @@ html(lang="ja")
                         a.card__github(href="//github.com/ffffffffff5555555555" target="_blank" rel="noopener noreferrer") @ffffffffff5555555555
                         a.card__url(href="//arupaka.dev/" target="_blank" rel="noopener noreferrer") https://arupaka.dev/
             .members-main__members.members
-                a.members__member.member(href="#k-taro")
+                label.members__member.member(for="k-taro-cb")
                     img.member__photo(src="/members/k-taro.png")
                     .member__name-box
                         span.member__name K-Taro
-                a.members__member.member(href="#mizucoffee")
+                label.members__member.member(for="mizucoffee-cb")
                     img.member__photo(src="/members/mizucoffee.png")
                     .member__name-box
                         span.member__name mizucoffee
-                a.members__member.member(href="#sakurayoru")
+                label.members__member.member(for="sakurayoru-cb")
                     img.member__photo(src="/members/sakurayoru.png")
                     .member__name-box
                         span.member__name Sakurayoru
-                a.members__member.member(href="#arupaka")
+                label.members__member.member(for="arupaka-cb")
                     img.member__photo(src="/members/arupaka.png")
                     .member__name-box
                         span.member__name Arupaka
