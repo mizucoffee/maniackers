@@ -18,15 +18,28 @@ html(lang="ja")
             div.products-main__product.product
                 h2.product__h2 Kitty Cat
                 img.product__logo(src="./products/logo_color.svg", alt="")
+                p.product__description 作者: K-Taro, mizucoffee
                 p.product__description お気に入りのキーボードをいつでもどこでも。
                 p.product__description 11月祭で先行販売予定
 
             div.products-main__product.product
                 h2.product__h2 KCG空き部屋検索β
-                img.product__image(src="./products/kcg-available-room.png", alt="")
+                a(href="//kcg-available-room.netlify.com/")
+                    img.product__image(src="./products/kcg-available-room.png", alt="")
+                p.product__description 作者: mizucoffee
                 p.product__description ふと空いたスキマ時間。
                 p.product__description サクッと空き部屋を検索して有意義に過ごしてみませんか？
                 p.product__description
                     a(href="//kcg-available-room.netlify.com/") KCG空き部屋検索β
+
+            div.products-main__product.product
+                h2.product__h2(style="font-size: 24pt;") 【非公式】KCG空き教室リアルタイム表示システム
+                a(href="//kcgfreeroom.netlify.com/")
+                    img.product__image(src="./products/kcg-free-room.png", alt="")
+                p.product__description 作者: Sakurayoru
+                p.product__description リアルタイムでわかる空き教室!!
+                p.product__description 隙間時間を有効活用!!
+                p.product__description
+                    a(href="//kcgfreeroom.netlify.com/") 【非公式】KCG空き教室リアルタイム表示システム
 
         include _footer
