@@ -1,9 +1,16 @@
+- const pagename = 'Members'
 doctype html
 html(lang="ja")
     head
         link(rel="stylesheet", href="/members.css")
         link(href="https://fonts.googleapis.com/css?family=Quicksand:600,700&display=swap" rel="stylesheet")
         include _head
+        meta(property="og:url" content="https://www.maniackers.club/members.html")
+        meta(property="og:type" content="article")
+        meta(property="og:title" content=pagename)
+        meta(property="og:description" content="Maniackers メンバー紹介")
+        meta(name="twitter:title" content=pagename)
+        title Maniackers | #{pagename}
     body
         include _header
         main.members-main
@@ -66,7 +73,7 @@ html(lang="ja")
                                 .card-data__name Shun Hirose
                                 .card-data__position Yurufuwa Enginner
                                 .card-data__skills-works
-                                    .card-data__skill-work-header Works:
+                                    .card-data__skill-work-header Skills:
                                     .card-data__skill-work-box
                                         .card-data__skill-work C# / Python / C / HTML5
                                         .card-data__skill-work Xamarin

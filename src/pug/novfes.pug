@@ -1,8 +1,15 @@
+- const pagename = 'November Festival'
 doctype html
 html(lang="ja")
     head
         link(rel="stylesheet", href="/novfes.css")
         include _head
+        meta(property="og:url" content="https://www.maniackers.club/novfes.html")
+        meta(property="og:type" content="article")
+        meta(property="og:title" content=pagename)
+        meta(property="og:description" content="Maniackers 11月祭")
+        meta(name="twitter:title" content=pagename)
+        title Maniackers | #{pagename}
     body
         include _header
         main.novfes-main
